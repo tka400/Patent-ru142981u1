@@ -1,0 +1,140 @@
+a{
+	text-decoration: none;
+	background-color: lightblue;
+	color: black;
+	padding: 1px 10px 1px 10px;
+	margin: 0 auto;
+	transition: all 0.3s ease;
+	text-transform: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+a:hover{
+	background-color: gray;
+	color: white;
+	transition: all 0.3s ease;
+}
+.hline1{
+	grid-area: hline1;	
+}
+.hline2{
+	grid-area: hline2;	
+}
+.hline3{
+	grid-area: hline3;	
+}
+.hline4{
+	grid-area: hline4;	
+}
+.hline5{
+	grid-area: hline5;	
+}
+.hline6{
+	grid-area: hline6;	
+}
+.hline7{
+	grid-area: hline7;	
+}
+
+.title1{
+	grid-area: title1;
+}
+.title2{
+	grid-area: title2;
+}
+.title3{
+	grid-area: title3;
+}
+.title4{
+	grid-area: title4;
+}
+.title5{
+	grid-area: title5;
+}
+.title6{
+	grid-area: title6;
+}
+.title7{
+	grid-area: title7;
+}
+.title8{
+	grid-area: title8;
+}
+
+.tesis1{
+	grid-area: tesis1;
+}
+.tesis2{
+	grid-area: tesis2;
+}
+.tesis3{
+	grid-area: tesis3;
+}
+.tesis4{
+	grid-area: tesis4;
+}
+.tesis5{
+	grid-area: tesis5;
+}
+.tesis6{
+	grid-area: tesis6;
+}
+.tesis7{
+	grid-area: tesis7;
+}
+.tesis8{
+	grid-area: tesis8;
+}
+
+.container{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"title1 tesis1"
+	"hline1 hline1"
+	"title2 tesis2"
+	"hline2 hline2"
+	"title3 tesis3"
+	"hline3 hline3"
+	"title4 tesis4"
+	"hline4 hline4"
+	"title5 tesis5"
+	"hline5 hline5"
+	"title6 tesis6"
+	"hline6 hline6"
+	"title7 tesis7"
+	"hline7 hline7"
+	"title8 tesis8";
+}
+
+@media screen and (max-width: 535px)
+{
+.container{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"title1"
+	"tesis1"
+	"hline1"
+	"title2"
+	"tesis2"
+	"hline2"
+	"title3"
+	"tesis3"
+	"hline3"
+	"title4"
+	"tesis4"
+	"hline4"
+	"title5"
+	"tesis5"
+	"hline5"
+	"title6"
+	"tesis6"
+	"hline6"
+	"title7"
+	"tesis7"
+	"hline7"
+	"title8"
+	"tesis8";
+}
+}

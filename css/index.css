@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+:root{
+	--brd: 0px solid black;
+	--clr: lightblue;
+}
+
+.top{
+	grid-area: top;
+	border: var(--brd);
+	padding-top: 10px;
+	margin: 0 auto;
+	align-content: center;
+}
+
+.navigate{
+	position: relative;
+	grid-area: navigate;
+	border: var(--brd);
+	margin: 20px auto 20px auto;
+	padding: 0px 0px 20px 0px;
+	min-width: 200px;
+	border-bottom: 1px solid black
+}
+
+.navigate ul{
+	list-style: none;	
+	display: flex;
+} 
+
+.navigate li ul{
+	position: absolute;
+	display: none;	
+}
+
+.navigate li:hover > .inner{
+	display: block;
+}
+
+.inner a{
+	text-transform: none;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	background-color: var(--clr);
+	color: black;
+	padding: 1px 10px 1px 10px;
+	margin: 0 -1px;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	border-left: 1px solid black;
+}
+
+a:last-child{
+	border-right: 1px solid black;
+}
+
+a:hover{
+	background-color: gray;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.main{
+	grid-area: main;
+	border: var(--brd);
+}
+
+.footer{
+	grid-area: footer;
+	border: var(--brd);
+	height: 20px;
+	padding: 1px 0 1px 0;
+	background-color: lightblue;
+}
+
+.container{
+	background-image: url("../newpic/stamp.jpg"), url("../newpic/00.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-blend-mode: overlay;
+	background-position: top left, top right; 
+	background-size: 90px, 110px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 20fr 1fr;
+	width: 90%;
+	height: 100vh;
+	margin: 0 auto;
+	grid-template-areas: 
+	"top"
+	"navigate"
+	"main"
+	"footer";
+	border: var(--brd);
+}
+
+iframe{
+	width:100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 750px)
+{
+.container{
+	background-color: rgb(255,255,255,0.25);
+	transition: all 1s ease;
+}
+}
+@media screen and (max-width: 650px)
+{
+.container{
+	background-color: rgb(255,255,255,0.5);
+	transition: all 1s ease;
+}
+}
+@media screen and (max-width: 600px)
+{
+.container{
+	background-color: rgb(255,255,255,0.75);
+	transition: all 1s ease;
+}
+}
+@media screen and (max-width: 550px)
+{
+.container{
+	background-color: white;
+	transition: all 1s ease;
+}
+}

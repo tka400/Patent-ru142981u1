@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Авторы</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<style>
+		a{
+			text-decoration: none;
+			background-color: lightblue;
+			color: black;
+			padding: 1px 10px 1px 10px;
+			margin: 0 auto;
+			transition: all 0.3s ease;
+			text-transform: none;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+		a:hover{
+			background-color: gray;
+			color: white;
+			transition: all 0.3s ease;
+		}
+		.Mpic{
+			grid-area: mpic;
+			border: 0px solid black;
+			}
+		.Mname{
+			grid-area: mname;
+			padding: 0 10px;
+			border: 0px solid black;
+		}
+		.Tpic{
+			grid-area: tpic;
+			border: 0px solid black;
+		}
+		.Tname{
+			grid-area: tname;
+			padding: 0 10px;
+			border: 0px solid black;
+		}
+		.Mail{
+			margin: 10px auto;
+			display: flex;
+			width: 50%;
+			border: 0px solid black;
+		}	
+		.container{
+			margin: 0 auto;
+			display: grid;
+			width: 350px;
+			grid-template-columns: 100px 250px;
+			grid-template-areas: 
+			"mpic mname"
+			"tpic tname"
+		}	
+	</style>
+
+	<body>
+		<div class="container">
+			<div class="Mpic">
+				<img src="newpic/MA.jpg" width="100px">				
+			</div>
+			<div class="Mname">
+				<p>Милов Александр Евгеньевич<br>
+				к.т.н.<br>
+				Даурия Аэроспейс (г. Москва)</p>
+			</div>
+			<div class="Tpic">
+				<img src="newpic/TV.jpg" width="100px">
+			</div>
+			<div class="Tname">
+				<p>Ткач Владимир Владимирович<br>
+				к.т.н.<br>
+				АО НПО Энергомаш (г. Химки)</p>
+			</div>				
+		</div>
+		<div class="Mail">
+			<a href="mailto:tka400@mail.ru">Написать письмо</a>				
+		</div>	
+
+
+		<center>
+			<iframe src="https://www5.cbox.ws/box/?boxid=914225&boxtag=nwzFX2" width="450px" height="450" allowtransparency="yes" allow="autoplay" frameborder="1" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+		</center>
+
+
+
+
+	</body>
+
+</html>

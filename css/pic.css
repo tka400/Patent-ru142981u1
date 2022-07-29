@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+wrapper{
+	max-width: 650px;
+	margin: 0 auto;
+}
+ul.accordion{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+ul.accordion li{
+	width: 50px;
+	overflow: hidden;
+	padding: 1px 1px 0;
+	margin:0 2px 0 2px;
+	cursor: pointer;
+	display: block;
+	border: 0px solid lightgray;
+	box-shadow: 1px 1px 10px lightgray;
+	transition: all 1s ease;
+	position: relative;
+}
+ul.accordion li p{
+	display: none;
+}
+img{
+	display: block;
+	margin: 0 auto;
+}
+ul.accordion li > div{
+    border: 0px solid black;
+    position: relative;
+    top: 50%;
+    transform: 	translate(0%, -50%);
+}
+ul.accordion li:hover{
+	width: 400px;
+	box-shadow: 1px 1px 10px black;
+	transition: all 0.5s ease;
+}
+.big{
+	width: 300px;
+}
+.middle{
+	width: 200px;
+}
+.small{
+	width: 100px;
+}
+ul.accordion li:hover p{
+	display: block;
+}
+ul.accordion li:nth-child(6){
+	width: 400px;
+}
+ul.accordion li:nth-child(6) p{
+	display: block;
+}
+ul.accordion:hover li:nth-child(6){
+	width: 50px;
+}
+ul.accordion:hover li:nth-child(6) p{
+	display: none;
+}
+ul.accordion li:nth-child(6):hover{
+	width: 400px;
+}
+ul.accordion li:nth-child(6):hover p{
+	display: block;
+}
+li p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
